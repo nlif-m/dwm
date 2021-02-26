@@ -67,6 +67,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
     { MODKEY|ShiftMask,             XK_d,      spawn,          {.v = passmenucmd } },
     { MODKEY,                       XK_F2,     spawn,          SHCMD("setxkbmap -layout us,ru -option grp:ctrl_shift_toggle") },
+    { MODKEY,                       XK_F10,     spawn,          SHCMD("slock systemctl suspend -i ") },
+    { MODKEY,                       XK_F12,     spawn,          SHCMD("shutdown now") },
     {MODKEY,                        XK_n,      spawn,          SHCMD(TERMINAL " -e newsboat")},
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
