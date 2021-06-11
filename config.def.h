@@ -66,7 +66,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
     { MODKEY|ShiftMask,             XK_d,      spawn,          {.v = passmenucmd } },
-    { MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("dmenu_otp") },
+    { MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("passmenu_otp") },
     { MODKEY,                       XK_F2,     spawn,          SHCMD("setxkbmap -layout us,ru -option grp:ctrl_shift_toggle") },
     { MODKEY,                       XK_e,      spawn,          SHCMD("evolution") },
     { MODKEY,                       XK_F10,     spawn,          SHCMD("slock systemctl suspend -i ") },
