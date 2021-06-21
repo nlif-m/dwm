@@ -56,6 +56,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 #define TERMINAL "st"
 #define TERMCLASS "St"
+#define PATHTODWMMD "~/.local/src/dwm/dwm.md"
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
@@ -67,6 +68,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
     { MODKEY|ShiftMask,             XK_d,      spawn,          {.v = passmenucmd } },
     { MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("passmenu_otp") },
+    { MODKEY,                       XK_F1,     spawn,          SHCMD("pandoc --from markdown --to pdf " PATHTODWMMD " | zathura - ") },
     { MODKEY,                       XK_F2,     spawn,          SHCMD("setxkbmap -layout us,ru -option grp:ctrl_shift_toggle") },
     { MODKEY,                       XK_e,      spawn,          SHCMD("evolution") },
     { MODKEY,                       XK_F10,     spawn,          SHCMD("slock systemctl suspend -i ") },
