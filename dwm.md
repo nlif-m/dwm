@@ -25,5 +25,6 @@
 * M-c        cmus
 * M-S-Return terminal
 * M-S-h      htop
+* M-S-t      thunar
 
 * M-S-q      quit from dwm
