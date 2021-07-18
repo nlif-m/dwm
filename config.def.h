@@ -75,6 +75,7 @@ static Key keys[] = {
     { MODKEY,                       XK_F12,     spawn,          SHCMD("shutdown now") },
     { MODKEY,                       XK_n,      spawn,          SHCMD(TERMINAL " -e newsboat")},
     { MODKEY,                       XK_r,      spawn,          SHCMD(TERMINAL " -e ranger") },
+    { MODKEY|ShiftMask,             XK_t,      spawn,          SHCMD("thunar") },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
