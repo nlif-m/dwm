@@ -26,5 +26,6 @@
 * M-S-Return terminal
 * M-S-h      htop
 * M-S-t      thunar
+* M-S-m      mpvv (script to watch video from ~/Videos/watch_later come with dotfiles)
 
 * M-S-q      quit from dwm
