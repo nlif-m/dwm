@@ -18,7 +18,7 @@
 ### Applications
 * M-S-d      passmenu
 * M-d        dmenu
-* M-e        evolution
+* M-e        emacsclient
 * M-n        newsboat
 * M-S-n      neomutt 
 * M-r        ranger

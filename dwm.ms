@@ -31,7 +31,7 @@ M-S-d      passmenu
 .BL 
 M-d        dmenu
 .BL 
-M-e        evolution
+M-e        emacsclient
 .BL 
 M-n        newsboat
 .BL 

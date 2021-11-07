@@ -70,7 +70,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("passmenu_otp") },
     { MODKEY,                       XK_F1,     spawn,          SHCMD("groff -ms -T pdf " PATHTODWMMS " | zathura - ") },
     { MODKEY,                       XK_F2,     spawn,          SHCMD("setxkbmap -layout us,ru -option grp:ctrl_shift_toggle") },
-    { MODKEY,                       XK_e,      spawn,          SHCMD("evolution") },
+    { MODKEY,                       XK_e,      spawn,          SHCMD(TERMINAL " emacsclient -t") },
     { MODKEY,                       XK_F10,    spawn,          SHCMD("slock loginctl suspend -i") },
     { MODKEY,                       XK_F12,    spawn,          SHCMD("shutdown now") },
     { MODKEY,                       XK_n,      spawn,          SHCMD(TERMINAL " -e newsboat")},
